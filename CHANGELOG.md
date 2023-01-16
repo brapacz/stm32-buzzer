@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.1
+
+* Added instalation instruction to README file.
+
 ## v1.0.0
 
 * Initial version extracted from project. Contains
