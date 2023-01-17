@@ -92,33 +92,33 @@ Buzzer_Note(&hbuzzer, 0);
 I used tiny speaker, resistor for protection and NPN transistor, it was loud enough to be noticable. It should also work with speaker directly wired between MCU pin and GND.
 
 ```
-                        ___ 3v3
-                         |
-                         |
-                         |
-                        _|_
-                        | |
-                        | |  100 Ohm resistor
-                        |_|
-                         |
-                         |
-                         |    __
-                         |___|  \
-                             |   | Buzzer/Speaker/Piezzo
-                          ___|   |
-                         |   |__/
-                         |
-                      ___|__
-                     /   /  \
-                    /  |/    \
- MCU pin ___________|__|     | S8050 Transistor
-                    |  |\    |
-                    \  | ↘   /
-                     \___|__/
-                         |
-                         |
-                         |
-                         |
-                         |
-                         V  GND
+                                  ___ 3v3
+                                   |
+                                   |
+                                   |
+                                  _|_
+                                  | |
+                                  | |  100 Ohm resistor
+                                  |_|
+                                   |
+                                   |
+                                   |    __
+                                   |___|  \
+                                       |   | Buzzer/Speaker/Piezzo
+                                    ___|   |
+                                   |   |__/
+                                   |
+                                ___|__
+            47 Ohm resistor    /   /  \
+               __________     /  |/    \
+ MCU pin ______|        |_____|__|     | S8050 NPN transistor
+               |________|     |  |\    |
+                              \  | ↘   /
+                               \___|__/
+                                   |
+                                   |
+                                   |
+                                   |
+                                   |
+                                   V  GND
 ```
